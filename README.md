@@ -26,21 +26,35 @@ Laravel package for integrating with MiniPNG API - Image and PDF processing serv
 - Laravel 9.0, 10.0, or 11.0
 - MiniPNG API key
 
-## Installation
+## Getting Started
 
-1. Install the package via Composer:
+### 1. Get Your API Token
+
+To use this package, you need a MiniPNG API token:
+
+1. **Create an account or login** at [https://minipng.com/en/login](https://minipng.com/en/login)
+2. **Get your API token** from [https://minipng.com/user/panel/api-token](https://minipng.com/user/panel/api-token)
+3. **Enjoy 500 free credits** for one month upon registration
+
+### 2. Installation
+
+Install the package via Composer:
 
 ```bash
 composer require minipng/laravel-minipng
 ```
 
-2. Publish the configuration file:
+### 3. Publish Configuration
+
+Publish the configuration file:
 
 ```bash
 php artisan vendor:publish --tag=minipng-config
 ```
 
-3. Add your MiniPNG API key to your `.env` file:
+### 4. Configure API Key
+
+Add your MiniPNG API key to your `.env` file:
 
 ```env
 MINIPNG_API_KEY=your_api_key_here
