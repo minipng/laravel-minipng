@@ -1,0 +1,76 @@
+{
+    "name": "minipng/laravel-minipng",
+    "description": "Laravel package for MiniPNG API integration - Image and PDF processing",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "minipng",
+        "image-compression",
+        "pdf-compression",
+        "image-conversion",
+        "api",
+        "image-processing",
+        "pdf-processing"
+    ],
+    "homepage": "https://github.com/minipng/laravel-minipng",
+    "support": {
+        "issues": "https://github.com/minipng/laravel-minipng/issues",
+        "source": "https://github.com/minipng/laravel-minipng",
+        "email": "info@minipng.com"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/minipng"
+        }
+    ],
+    "authors": [
+        {
+            "name": "MiniPNG Team",
+            "email": "info@minipng.com",
+            "homepage": "https://minipng.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MiniPNG\\LaravelMiniPNG\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MiniPNG\\LaravelMiniPNG\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MiniPNG\\LaravelMiniPNG\\MiniPNGServiceProvider"
+            ],
+            "aliases": {
+                "MiniPNG": "MiniPNG\\LaravelMiniPNG\\Facades\\MiniPNG"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage",
+        "test-verbose": "phpunit --verbose"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
